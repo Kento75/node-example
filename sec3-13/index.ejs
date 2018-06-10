@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%=title %></title>
+  <link type="text/css" href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <head>
+    <h1>Index</h1>
+  </head>
+  <div role="main">
+    <p><%=content %></p>
+    <p>
+      <table style="width: 400px;">
+        <tr><th>伝言</th></tr>
+        <tr><td><%= data.msg %></td></tr>
+      </table>
+    </p>
+    <p>
+      <form method="post" action="/">
+        MESSAGE <input type="text" name="msg">
+        <input type="submit" value="送信">
+      </form>
+    </p>
+  </div>
+</body>
+</html>
