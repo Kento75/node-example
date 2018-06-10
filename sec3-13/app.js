@@ -98,6 +98,7 @@ function getCookie(key, request) {
   for(var i in data) {
     if(data[i].trim().startsWith(key + '=')) {
       var result = data[i].trim().substring(key.length + 1)
+      // クッキー形式から元の形式に戻してリターン
       return unescape(result)
     }
   }
